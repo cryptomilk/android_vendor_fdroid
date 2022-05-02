@@ -25,7 +25,7 @@ PROPRIETARY_DIR="$MY_DIR/proprietary"
 
 source tools/extract_utils.sh
 
-rm -rf "$PROPRIETARY_DIR"
+#rm -rf "$PROPRIETARY_DIR"
 
 function download_package() {
     local repo="$1"
@@ -113,17 +113,18 @@ function get_packages() {
     return 0
 }
 
-get_packages "$FDROID_REPO_URL" "$MY_DIR/repo/fdroid.txt"
+#get_packages "$FDROID_REPO_URL" "$MY_DIR/repo/fdroid.txt"
 
 INITIAL_COPYRIGHT_YEAR=2017
 VENDOR="fdroid"
 ANDROIDMK="$MY_DIR/Android.mk"
+ANDROIDBP="$MY_DIR/Android.bp"
 PRODUCTMK="$MY_DIR/$VENDOR-vendor.mk"
 
 DEVICE="true"
 write_headers "" WITH_FDROID
 DEVICE=
-write_makefiles "$MY_DIR/repo/fdroid.txt"
+write_makefiles "$MY_DIR/repo/fdroid.txt" true
 write_footers
 
 exit 0
