@@ -25,7 +25,7 @@ PROPRIETARY_DIR="$MY_DIR/proprietary"
 
 source tools/extract_utils.sh
 
-#rm -rf "$PROPRIETARY_DIR"
+rm -rf "$PROPRIETARY_DIR"
 
 function download_package() {
     local repo="$1"
@@ -113,7 +113,7 @@ function get_packages() {
     return 0
 }
 
-#get_packages "$FDROID_REPO_URL" "$MY_DIR/repo/fdroid.txt"
+get_packages "$FDROID_REPO_URL" "$MY_DIR/repo/fdroid.txt"
 
 INITIAL_COPYRIGHT_YEAR=2017
 VENDOR="fdroid"
