@@ -1,5 +1,5 @@
 # FDroid
--app/org.fdroid.fdroid_1015052.apk:app/F-Droid.apk;PRESIGNED
+-app/org.fdroid.fdroid_1015053.apk:app/F-Droid.apk;PRESIGNED
 -app/com.aurora.store_41.apk:app/AuroraStore.apk;PRESIGNED
 -priv-app/org.fdroid.fdroid.privileged_2130.apk:priv-app/FDroidPrivilegedExtension.apk;PRESIGNED
 
